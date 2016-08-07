@@ -7,16 +7,22 @@
             "url": "https://gist.githubusercontent.com/Jiiks/cd0ae9195ff42f0e79024170cb747e91/raw/betas.plugin.js"
         },
         {
-            "name": "Hide Channels",
-            "author": "Anxeal",
-            "description": "",
-            "url": "https://gist.githubusercontent.com/Anxeal/14bc24d30543c3ecd789ff1cfc323507/raw/HideChannel.plugin.js"
-        },
-        {
             "name": "Hide Images",
             "author": "Anxeal",
             "description": "Adds a button to the right-click menu to hide images on certain servers and channels",
             "url": "https://raw.githubusercontent.com/Anxeal/BDEnhancements/master/plugins/HideImages.plugin.js"
+        },
+        {
+            "name": "Colored Typing",
+            "author": "Anxeal, Bolli",
+            "description": "Make the text color of the \"typing...\" text same as role color",
+            "url": "https://raw.githubusercontent.com/Anxeal/BDEnhancements/master/plugins/ColoredTyping.plugin.js"
+        },
+        {
+            "name": "Colored Voice",
+            "author": "Anxeal",
+            "description": "Make the text color of the names in the voice channel same as role color",
+            "url": "https://raw.githubusercontent.com/Anxeal/BDEnhancements/master/plugins/ColoredVoice.plugin.js"
         },
         {
             "name": "Renamer",
