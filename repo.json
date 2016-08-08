@@ -7,6 +7,12 @@
             "url": "https://gist.githubusercontent.com/Jiiks/cd0ae9195ff42f0e79024170cb747e91/raw/betas.plugin.js"
         },
         {
+            "name": "Server Themes",
+            "author": "DeNial",
+            "description": "Allow individual servers to use specific themes.  More instructions on repo: https://github.com/IRDeNial/BD-Server-Themes/blob/master/README.md",
+            "url": "https://raw.githubusercontent.com/IRDeNial/BD-Server-Themes/master/serverTheme.plugin.js"
+        },
+        {
             "name": "Creation Date",
             "author": "Natsulus",
             "description": "See when a user's account was created.",
