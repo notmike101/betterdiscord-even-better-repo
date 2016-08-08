@@ -171,6 +171,12 @@
     ],
     "themes": [
         {
+            "name": "Wheat Transparency",
+            "author": "Zekeeh",
+            "description": "Wheat Transparency theme for Discord",
+            "url": "https://raw.githubusercontent.com/Zekeeh/Wheat-Transparency/master/WheatTransparency.theme.css"
+        },
+        {
             "name": "Titlebar",
             "author": "BeardDesign",
             "description": "Add a titlebar to the top of your window :)",
