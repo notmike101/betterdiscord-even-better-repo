@@ -171,6 +171,12 @@
     ],
     "themes": [
         {
+            "name": "Material Icons Theme",
+            "author": "Zekeeh",
+            "description": "A theme for Discord changing icons",
+            "url": "https://raw.githubusercontent.com/Zerthox/Material-Icon-Theme/master/Material_Icon_Theme.theme.css"
+        },
+        {
             "name": "Wheat Transparency",
             "author": "Zekeeh",
             "description": "Wheat Transparency theme for Discord",
