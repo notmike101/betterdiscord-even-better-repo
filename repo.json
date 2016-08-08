@@ -7,6 +7,12 @@
             "url": "https://gist.githubusercontent.com/Jiiks/cd0ae9195ff42f0e79024170cb747e91/raw/betas.plugin.js"
         },
         {
+            "name": "Creation Date",
+            "author": "Natsulus",
+            "description": "See when a user's account was created.",
+            "url": "https://raw.githubusercontent.com/Natsulus/BD-Repo/master/plugins/CreationDate/CreationDate.plugin.js"
+        },
+        {
             "name": "Hide Images",
             "author": "Anxeal",
             "description": "Adds a button to the right-click menu to hide images on certain servers and channels",
