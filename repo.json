@@ -524,6 +524,20 @@
             "description": "",
             "url": "https://raw.githubusercontent.com/Quietess/Casual-Dark/master/CasualDark.css",
             "preview": ""
+        },
+        {
+            "name": "Metro For Discord",
+            "author": "Tako",
+            "description": "",
+            "url": "https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/Metro_for_Discord.theme.css",
+            "preview": ""
+        },
+        {
+            "name": "Battlefield",
+            "author": "Tako",
+            "description": "",
+            "url": "https://raw.githubusercontent.com/TakosThings/battlefield/master/battlefield.theme.css",
+            "preview": ""
         }
     ]
 }
