@@ -382,43 +382,43 @@
             "name": "ClearVision",
             "author": "Zerthox",
             "description": "Amber",
-            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/ClearVision_Amber.theme.css",
-            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber_1.png"
+            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Amber.theme.css",
+            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber1.png"
         }, 
         {
             "name": "ClearVision",
             "author": "Zerthox",
             "description": "Amethyst",
-            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/ClearVision_Amethyst.theme.css",
-            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst_1.png"
+            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Amethyst.theme.css",
+            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst1.png"
         }, 
         {
             "name": "ClearVision",
             "author": "Zerthox",
             "description": "Emerald",
-            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/ClearVision_Emerald.theme.css",
-            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald_1.png"
+            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Emerald.theme.css",
+            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald1.png"
         }, 
         {
             "name": "ClearVision",
             "author": "Zerthox",
             "description": "Remove Shadows",
-            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/ClearVision_RemoveShadows.theme.css",
+            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_RemoveShadows.theme.css",
             "preview": ""
         }, 
         {
             "name": "ClearVision",
             "author": "Zerthox",
             "description": "Ruby",
-            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/ClearVision_Ruby.theme.css",
-            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby_1.png"
+            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Ruby.theme.css",
+            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby1.png"
         }, 
         {
             "name": "ClearVision",
             "author": "Zerthox",
             "description": "Sapphire",
-            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/ClearVision_Sapphire.theme.css",
-            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire_1.png"
+            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Sapphire.theme.css",
+            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire1.png"
         }, 
         {
             "name": "Akame",
