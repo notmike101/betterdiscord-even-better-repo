@@ -471,11 +471,17 @@
         }, 
         {
             "name": "Witcher 3",
-            "author": "Mitchell",
+            "author": "Jadeonking",
             "description": "",
             "url": "https://raw.githubusercontent.com/jadeonking/Witcher-3-Theme-for-Discord/master/Witcher3.theme.css",
             "preview": ""
-        }, 
+        },
+        {   "name": "DuskCord",
+            "author": "Jadeonking",
+            "description": "",
+            "url": "https://raw.githubusercontent.com/jadeonking/Witcher-3-Theme-for-Discord/Non-Transparent/DuskCord.theme.css",
+            "preview": ""
+        },
         {
             "name": "Dat Discord",
             "author": "IceCleaver",
