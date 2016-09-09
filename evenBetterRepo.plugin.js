@@ -16,10 +16,20 @@ evenBetterRepo.prototype.getAuthor = function(){
 };
 // OS Specific
 var _os = process.platform;
+var theme_path;
+var plugin_path;
 // API Hooks
 evenBetterRepo.prototype.load = function(){
-    this.themePath = process.env.APPDATA + "\\BetterDiscord\\themes\\";
-    this.pluginPath = process.env.APPDATA + "\\BetterDiscord\\plugins\\";
+    if (_os == "win32") {
+        this.themePath = process.env.APPDATA + "\\BetterDiscord\\themes\\";
+        this.pluginPath = process.env.APPDATA + "\\BetterDiscord\\plugins\\";
+    }else if (_os == "linux"){
+        this.themePath= ".config/BetterDiscord/themes/";
+        this.pluginPath= ".config/BetterDiscord/plugins/";
+    }else if (_os == "darwin"){
+        this.themePath = process.env.HOME + "/Library/Preferences/BetterDiscord/themes/";
+        this.pluginPath = process.env.HOME + "/Library/Preferences/BetterDiscord/plugins/";
+    }
     this.cssURL = 'https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/ebr.css';
     this.repoURL = 'https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/repo.json';
     this.ebrCSS = '';
@@ -27,6 +37,8 @@ evenBetterRepo.prototype.load = function(){
     this.useHTTP = false;
     this.settingsAreaLoaded = false;
 
+    theme_path = this.themePath;
+    plugin_path = this.pluginPath;
     this.getCSS = function(){
         require("request").get(this.cssURL,(error,response,body)=>{
             if(!error) {
@@ -132,13 +144,7 @@ evenBetterRepo.prototype.load = function(){
     };
     evenBetterRepo.installTheme = function(url){
         var themeName = url.substr(url.lastIndexOf('/') + 1);
-        if (_os == "win32") {
-            var dest = process.env.APPDATA + "\\BetterDiscord\\themes\\" + url.substr(url.lastIndexOf('/') + 1);
-        }else if (_os == "linux"){
-            var dest = ".config/BetterDiscord/themes/" + decodeURI(url.substr(url.lastIndexOf('/') + 1));
-        }else if (_os == "darwin"){
-            var dest = process.env.HOME + "/Library/Preferences/BetterDiscord/themes/" + decodeURI(url.substr(url.lastIndexOf('/') + 1));
-        }
+        var dest = theme_path + url.substr(url.lastIndexOf('/') + 1);
         var file = require('fs').createWriteStream(dest);
 
         require('https').get(url, function(response) {
@@ -154,13 +160,7 @@ evenBetterRepo.prototype.load = function(){
     };
     evenBetterRepo.installPlugin = function(url){
         var pluginName = url.substr(url.lastIndexOf('/') + 1);
-        if (_os == "win32") {
-            var dest = process.env.APPDATA + "\\BetterDiscord\\plugins\\" + url.substr(url.lastIndexOf('/') + 1);
-        }else if (_os == "linux") {
-            var dest = ".config/BetterDiscord/plugins/" + decodeURI(url.substr(url.lastIndexOf('/') + 1));
-        }else if (_os == "darwin") {
-            var dest = process.env.HOME + "/Library/Preferences/BetterDiscord/plugins/" + decodeURI(url.substr(url.lastIndexOf('/') + 1));
-        }
+        var dest = plugin_path + url.substr(url.lastIndexOf('/') + 1);
         var file = require('fs').createWriteStream(dest);
 
         require('https').get(url, function(response) {
