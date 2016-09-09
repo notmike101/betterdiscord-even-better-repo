@@ -14,7 +14,8 @@ evenBetterRepo.prototype.getVersion = function(){
 evenBetterRepo.prototype.getAuthor = function(){
     return '<a href="https://github.com/IRDeNial" target="_BLANK">DeNial</a>';
 };
-
+// OS Specific
+var _os = process.platform;
 // API Hooks
 evenBetterRepo.prototype.load = function(){
     this.themePath = process.env.APPDATA + "\\BetterDiscord\\themes\\";
@@ -131,8 +132,13 @@ evenBetterRepo.prototype.load = function(){
     };
     evenBetterRepo.installTheme = function(url){
         var themeName = url.substr(url.lastIndexOf('/') + 1);
-        
-        var dest = process.env.APPDATA + "\\BetterDiscord\\themes\\" + url.substr(url.lastIndexOf('/') + 1);
+        if (_os == "win32") {
+            var dest = process.env.APPDATA + "\\BetterDiscord\\themes\\" + url.substr(url.lastIndexOf('/') + 1);
+        }else if (_os == "linux"){
+            var dest = ".config/BetterDiscord/themes/" + decodeURI(url.substr(url.lastIndexOf('/') + 1));
+        }else if (_os == "darwin"){
+            var dest = process.env.HOME + "/Library/Preferences/BetterDiscord/themes/" + decodeURI(url.substr(url.lastIndexOf('/') + 1));
+        }
         var file = require('fs').createWriteStream(dest);
 
         require('https').get(url, function(response) {
@@ -148,8 +154,13 @@ evenBetterRepo.prototype.load = function(){
     };
     evenBetterRepo.installPlugin = function(url){
         var pluginName = url.substr(url.lastIndexOf('/') + 1);
-        
-        var dest = process.env.APPDATA + "\\BetterDiscord\\plugins\\" + url.substr(url.lastIndexOf('/') + 1);
+        if (_os == "win32") {
+            var dest = process.env.APPDATA + "\\BetterDiscord\\plugins\\" + url.substr(url.lastIndexOf('/') + 1);
+        }else if (_os == "linux") {
+            var dest = ".config/BetterDiscord/plugins/" + decodeURI(url.substr(url.lastIndexOf('/') + 1));
+        }else if (_os == "darwin") {
+            var dest = process.env.HOME + "/Library/Preferences/BetterDiscord/plugins/" + decodeURI(url.substr(url.lastIndexOf('/') + 1));
+        }
         var file = require('fs').createWriteStream(dest);
 
         require('https').get(url, function(response) {
@@ -270,7 +281,7 @@ evenBetterRepo.prototype.observer = function(e){
                 return false;
             });
             $('#theme-search').on('keyup.ebr',this.debounce(function(){
-                var me = $('#theme-search');        
+                var me = $('#theme-search');
                 if(me.val().length < 3) {
                     $('.ebr-theme-item').show();
                 } else {
@@ -286,7 +297,7 @@ evenBetterRepo.prototype.observer = function(e){
                 }
             },150));
             $('#plugin-search').on('keyup.ebr',this.debounce(function(){
-                var me = $('#plugin-search');        
+                var me = $('#plugin-search');
                 if(me.val().length < 3) {
                     $('.ebr-plugin-item').show();
                 } else {
