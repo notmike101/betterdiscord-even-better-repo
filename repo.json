@@ -16,7 +16,7 @@
             "name": "Creation Date",
             "author": "Natsulus",
             "description": "See when a user's account was created.",
-            "url": "https://raw.githubusercontent.com/Natsulus/BD-Repo/master/plugins/CreationDate/CreationDate.plugin.js"
+            "url": "https://raw.githubusercontent.com/Natsulus/BD-Repo/master/plugins/Creation%20Date/CreationDate.plugin.js"
         },
         {
             "name": "Hide Images",
