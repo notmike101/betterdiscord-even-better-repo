@@ -167,6 +167,12 @@
             "author": "samfun123",
             "description": "Checks for common link shorteners and converts them to the original link.",
             "url": "https://raw.githubusercontent.com/samfun123/script-storage/master/betterdiscord/plugins/unshortenLinks.plugin.js"
+        },
+        {
+            "name": "Owner Tags",
+            "author": "noodlebox",
+            "description": "Show a tag next to a server owner's name.",
+            "url": "https://raw.githubusercontent.com/noodlebox/betterdiscord-plugins/master/OwnerTag.plugin.js"
         }
     ],
     "themes": [
