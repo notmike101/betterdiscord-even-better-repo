@@ -167,6 +167,12 @@
             "author": "samfun123",
             "description": "Checks for common link shorteners and converts them to the original link.",
             "url": "https://raw.githubusercontent.com/samfun123/script-storage/master/betterdiscord/plugins/unshortenLinks.plugin.js"
+        }, 
+        {
+            "name": "MorkMoji",
+            "author": "MorkHub",
+            "description": "Enlarges emoji in messages to 64px (or custom size configurable in settings panel)",
+            "url": "https://raw.githubusercontent.com/MorkHub/BetterDiscord-MorkMoji/master/morkMoji.plugin.js"
         }
     ],
     "themes": [
