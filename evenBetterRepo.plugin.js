@@ -9,7 +9,7 @@ evenBetterRepo.prototype.getDescription = function(){
     return 'Easily access theme & plugin repository from within Discord client<br><br>Want to add your plugin or theme?  Submit a pull request here:<br><a href="https://github.com/IRDeNial/BD-Even-Better-Repo/issues/new" target="_BLANK">https://github.com/IRDeNial/BD-Even-Better-Repo/issues/new</a>';
 };
 evenBetterRepo.prototype.getVersion = function(){
-    return '2.5.0';
+    return '2.5.1';
 };
 evenBetterRepo.prototype.getAuthor = function(){
     return '<a href="https://github.com/IRDeNial" target="_BLANK">DeNial</a>';
