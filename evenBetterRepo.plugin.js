@@ -6,7 +6,7 @@ evenBetterRepo.prototype.getName = function(){
     return 'Even Better Repo';
 };
 evenBetterRepo.prototype.getDescription = function(){
-    return 'Easily access theme & plugin repository from within Discord client<br><br>Want to add your plugin or theme?  Submit a pull request here:<br><a href="https://github.com/IRDeNial/BD-Even-Better-Repo/issues/new" target="_BLANK">https://github.com/IRDeNial/BD-Even-Better-Repo/issues/new</a>';
+    return 'Easily access theme & plugin repository from within Discord client<br><br>Want to add your plugin or theme?  Submit a request here:<br><a href="https://github.com/IRDeNial/BD-Even-Better-Repo/issues/new" target="_BLANK">https://github.com/IRDeNial/BD-Even-Better-Repo/issues/new</a>';
 };
 evenBetterRepo.prototype.getVersion = function(){
     return '2.5.1';
@@ -14,22 +14,25 @@ evenBetterRepo.prototype.getVersion = function(){
 evenBetterRepo.prototype.getAuthor = function(){
     return '<a href="https://github.com/IRDeNial" target="_BLANK">DeNial</a>';
 };
+
 // OS Specific
-var _os = process.platform;
 var theme_path;
 var plugin_path;
+var ebr_changelog;
+
 // API Hooks
 evenBetterRepo.prototype.load = function(){
-    if (_os == "win32") {
+    if (process.platform == "win32") {
         this.themePath = process.env.APPDATA + "\\BetterDiscord\\themes\\";
         this.pluginPath = process.env.APPDATA + "\\BetterDiscord\\plugins\\";
-    } else if (_os == "linux"){
+    } else if (process.platform == "linux"){
         this.themePath= ".config/BetterDiscord/themes/";
         this.pluginPath= ".config/BetterDiscord/plugins/";
-    } else if (_os == "darwin"){
+    } else if (process.platform == "darwin"){
         this.themePath = process.env.HOME + "/Library/Preferences/BetterDiscord/themes/";
         this.pluginPath = process.env.HOME + "/Library/Preferences/BetterDiscord/plugins/";
     }
+    
     this.cssURL = 'https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/ebr.css';
     this.repoURL = 'https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/repo.json';
     this.pluginURL = 'https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/evenBetterRepo.plugin.js';
@@ -45,6 +48,14 @@ evenBetterRepo.prototype.load = function(){
     plugin_url = this.pluginURL;
     version_url = this.versionURL;
     current_version = this.getVersion();
+
+    this.getChangelog = function(){
+        require('request').get('https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/CHANGELOG.md',(error,response,body)=>{
+            if(!error) {
+                ebr_changelog = body.replace(/(\r\n|\n\r|\r|\n)/g, '<br>');
+            }
+        });
+    };
 
     this.autoUpdate = function(){
         var version = current_version;
@@ -218,6 +229,7 @@ evenBetterRepo.prototype.load = function(){
     this.autoUpdate();
     this.getCSS();
     this.getRepo();
+    this.getChangelog();
 };
 evenBetterRepo.prototype.unload = function(){};
 evenBetterRepo.prototype.start = function(){};
@@ -232,12 +244,16 @@ evenBetterRepo.prototype.stop = function(){
     $('.theme-install-button').off('click.ebr');
     $('.theme-update-button').off('click.ebr');
 };
+evenBetterRepo.prototype.getSettingsPanel = function () {
+    return '<div class="ebr-tab-bar-container">'+ebr_changelog+'</div>';
+};
 evenBetterRepo.prototype.observer = function(e){
     if(!this.settingsAreaLoaded && this.repo != '') {
         if(e.target.classList.contains('settings-right')) {
             this.settingsAreaLoaded = true;
             $('.tab-bar.SIDE').append('<div class="tab-bar-item ebr-themes">Themes</div>');
             $('.tab-bar.SIDE').append('<div class="tab-bar-item ebr-plugins">Plugins</div>');
+            $('button[onclick~="pluginModule.showSettings(\"Even Better Repo\");"]').text('Changelog').css('padding',0);
 
             $(`<div id="ebr-themes-pane" class="settings-inner" style="display:none;">
                     <div class="scroller-wrap">
