@@ -1,9 +1,6 @@
 # Even Better Repo
 A better implementation of a repository for themes &amp; plugins for BetterDiscord
 
-## Trello
-https://trello.com/b/1EJ4ypsB
-
 ## How To Install
 1. Install [BetterDiscord](https://betterdiscord.net/home/) if you don't already have it.
 2. Download [evenBetterRepo.plugin.js](https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/evenBetterRepo.plugin.js)
@@ -13,27 +10,41 @@ https://trello.com/b/1EJ4ypsB
 6. Restart betterDiscord
 
 ## How To Use
-Go into your BetterDiscord plugins list, and click "Explore" under the "Even Better Repo" item.
+1. Go into your Discord settings.
+2. On the left side column, you will see two new areas ("Plugins" and "Themes").
+3. Select the repository you wish to explore
+4. Click "Install" on the theme or plugin that you wish to use.
+    * If the theme or plugin is already installed, you will see an update button instead
 
 ## To Add Your Theme/Plugin To The Repo
 Due to the underlying conflicts in Git's pull request streamline, managing too many will become extremely tedious.
 From this point, please submit "Issues" with the content that you want added using the following template:
 ```
-Theme/Plugin Name:
-Theme/Plugin Author:
-Theme/Plugin Repo URL:
-Theme/Plugin Direct URL:
-Theme/Plugin Description: 
+Title: Repo Update - Theme/Plugin - Name
+Labels: RepoRequest
+
+Theme/Plugin Name: `TYPE HERE`
+Theme/Plugin Author: `TYPE HERE`
+Theme/Plugin Repo URL: `TYPE HERE`
+Theme/Plugin Direct URL: `TYPE HERE`
+Theme/Plugin Description: `TYPE HERE`
+
+THEME ONLY:
+Preview Screenshot: `TYPE HERE`
 ```
+[Click here for an example (https://github.com/IRDeNial/BD-Even-Better-Repo/issues/42)](https://github.com/IRDeNial/BD-Even-Better-Repo/issues/42)
+
+Failure to follow this exact layout will result in your request being denied.  Nobody has time to fix your mistakes constantly.
 
 ## Contributors
+A list of all contributors can be found [here (https://github.com/IRDeNial/BD-Even-Better-Repo/network/members)](https://github.com/IRDeNial/BD-Even-Better-Repo/network/members)
 * [IRDeNial](https://github.com/IRDeNial/)
 
 ## Contribution Guidelines
 * Document **ALL** code contributions
   * Anything undocumented will be ignored until full documentation is provided
-  * **TEST** your code first.  Do not blindly contribute.
-  * Do NOT do a pull request into master, do it on **[dev](https://github.com/IRDeNial/BD-Even-Better-Repo/tree/dev)** instead.
+* **TEST** your code first.  Do not blindly contribute.
+* Do NOT do a pull request into master, do it on **[dev](https://github.com/IRDeNial/BD-Even-Better-Repo/tree/dev)** instead.  This is for sake of simplicity.
     * Your pull requests will be merged into master at each iteration if accepted.
 
 ## Images
@@ -44,5 +55,3 @@ Theme/Plugin Description:
 * Make theme & plugin list look better (ebr.css)
 * Add actual version checking so users won't always see an update button if there is no update
 * More error catching!
-* Mac implementation (Later)
-* Linux implementation (Even later)
