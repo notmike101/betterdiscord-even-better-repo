@@ -179,6 +179,9 @@ evenBetterRepo.prototype.load = function(){
     evenBetterRepo.installTheme = function(url){
         var themeName = url.substr(url.lastIndexOf('/') + 1);
         var dest = theme_path + url.substr(url.lastIndexOf('/') + 1);
+        if(!dest.endsWith('.theme.css')) {
+            dest = theme_path + url.substr(url.lastIndexOf('/') + 1) + '.theme.css';
+        }
         var file = require('fs').createWriteStream(dest);
 
         require('https').get(url, function(response) {
@@ -195,6 +198,9 @@ evenBetterRepo.prototype.load = function(){
     evenBetterRepo.installPlugin = function(url){
         var pluginName = url.substr(url.lastIndexOf('/') + 1);
         var dest = plugin_path + url.substr(url.lastIndexOf('/') + 1);
+        if(!dest.endsWith('.plugin.js')) {
+            dest = theme_path + url.substr(url.lastIndexOf('/') + 1) + '.plugin.js';
+        }
         var file = require('fs').createWriteStream(dest);
 
         require('https').get(url, function(response) {
