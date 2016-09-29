@@ -173,6 +173,12 @@
             "author": "noodlebox",
             "description": "Show a tag next to a server owner's name.",
             "url": "https://raw.githubusercontent.com/noodlebox/betterdiscord-plugins/master/OwnerTag.plugin.js"
+        }, 
+        {
+            "name": "MorkMoji",
+            "author": "MorkHub",
+            "description": "Enlarges emoji in messages to 64px (or custom size configurable in settings panel)",
+            "url": "https://raw.githubusercontent.com/MorkHub/BetterDiscord-MorkMoji/master/morkMoji.plugin.js"
         }
     ],
     "themes": [
