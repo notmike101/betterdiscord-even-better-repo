@@ -9,7 +9,7 @@ evenBetterRepo.prototype.getDescription = function(){
     return 'Easily access theme & plugin repository from within Discord client<br><br>Want to add your plugin or theme?  Submit a request here:<br><a href="https://github.com/IRDeNial/BD-Even-Better-Repo/issues/new" target="_BLANK">https://github.com/IRDeNial/BD-Even-Better-Repo/issues/new</a>';
 };
 evenBetterRepo.prototype.getVersion = function(){
-    return '2.5.2';
+    return '2.5.3';
 };
 evenBetterRepo.prototype.getAuthor = function(){
     return '<a href="https://github.com/IRDeNial" target="_BLANK">DeNial</a>';
@@ -210,7 +210,7 @@ evenBetterRepo.prototype.load = function(){
         var pluginName = url.substr(url.lastIndexOf('/') + 1);
         var dest = plugin_path + url.substr(url.lastIndexOf('/') + 1);
         if(!dest.endsWith('.plugin.js')) {
-            dest = theme_path + url.substr(url.lastIndexOf('/') + 1) + '.plugin.js';
+            dest = plugin_path + url.substr(url.lastIndexOf('/') + 1) + '.plugin.js';
         }
         var file = require('fs').createWriteStream(dest);
 
