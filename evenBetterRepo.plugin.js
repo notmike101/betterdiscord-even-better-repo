@@ -6,10 +6,10 @@ evenBetterRepo.prototype.getName = function(){
     return 'Even Better Repo';
 };
 evenBetterRepo.prototype.getDescription = function(){
-    return 'Easily access theme & plugin repository from within Discord client<br>Want to add your plugin or theme?  Submit a pull request here: <a href="https://github.com/IRDeNial/BD-Even-Better-Repo/tree/dev/" target="_BLANK">https://github.com/IRDeNial/BD-Even-Better-Repo/tree/dev/</a>';
+    return 'Easily access theme & plugin repository from within Discord client<br><br>Want to add your plugin or theme?  Submit a pull request here:<br><a href="https://github.com/IRDeNial/BD-Even-Better-Repo/issues/new" target="_BLANK">https://github.com/IRDeNial/BD-Even-Better-Repo/issues/new</a>';
 };
 evenBetterRepo.prototype.getVersion = function(){
-    return '2.0.0';
+    return '2.5.0';
 };
 evenBetterRepo.prototype.getAuthor = function(){
     return '<a href="https://github.com/IRDeNial" target="_BLANK">DeNial</a>';
@@ -23,15 +23,18 @@ evenBetterRepo.prototype.load = function(){
     if (_os == "win32") {
         this.themePath = process.env.APPDATA + "\\BetterDiscord\\themes\\";
         this.pluginPath = process.env.APPDATA + "\\BetterDiscord\\plugins\\";
-    }else if (_os == "linux"){
+    } else if (_os == "linux"){
         this.themePath= ".config/BetterDiscord/themes/";
         this.pluginPath= ".config/BetterDiscord/plugins/";
-    }else if (_os == "darwin"){
+    } else if (_os == "darwin"){
         this.themePath = process.env.HOME + "/Library/Preferences/BetterDiscord/themes/";
         this.pluginPath = process.env.HOME + "/Library/Preferences/BetterDiscord/plugins/";
     }
     this.cssURL = 'https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/ebr.css';
     this.repoURL = 'https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/repo.json';
+    this.pluginURL = 'https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/evenBetterRepo.plugin.js';
+    this.versionURL = 'https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/version';
+
     this.ebrCSS = '';
     this.repo = '';
     this.useHTTP = false;
@@ -39,6 +42,37 @@ evenBetterRepo.prototype.load = function(){
 
     theme_path = this.themePath;
     plugin_path = this.pluginPath;
+    plugin_url = this.pluginURL;
+    version_url = this.versionURL;
+    current_version = this.getVersion();
+
+    this.autoUpdate = function(){
+        var version = current_version;
+        require('request').get(version_url,(error,response,body)=>{
+            if(!error) {
+                if(version != body) {
+                    if(confirm('There is an update for EvenBetterRepo.  Would you like to update now?')) {
+                        require('https').get(plugin_url, function(response) {
+                            var file = require('fs').createWriteStream(plugin_path + 'evenBetterRepo.plugin.js');
+                            
+                            response.pipe(file);
+                            file.on('finish', function() {
+                                file.close();
+
+                                console.log("EvenBetterRepo plugin updated.  Press OK to reload discord");
+                                alert("EvenBetterRepo plugin updated.  Press OK to reload discord");
+                                document.location.reload();
+                            });
+                        }).on('error', function(err) {
+                            console.log("Error updating EvenBetterRepo plugin: " + err);
+                            alert("Error updating EvenBetterRepo plugin: " + err);
+                        });
+                    }
+                }
+            }
+        });
+    };
+
     this.getCSS = function(){
         require("request").get(this.cssURL,(error,response,body)=>{
             if(!error) {
@@ -175,6 +209,7 @@ evenBetterRepo.prototype.load = function(){
         });
     };
 
+    this.autoUpdate();
     this.getCSS();
     this.getRepo();
 };
