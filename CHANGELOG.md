@@ -1,6 +1,5 @@
 v2.5.3 - 9/29/2016
     * Fixed issue #45
-        * Plugins are saved in theme folder if they do not end in "plugin.js"
 
 v2.5.2 - 9/28/2016
     * Update description
