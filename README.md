@@ -1,6 +1,9 @@
 # Even Better Repo
 A better implementation of a repository for themes &amp; plugins for BetterDiscord
 
+## Trello
+https://trello.com/b/1EJ4ypsB
+
 ## How To Install
 1. Install [BetterDiscord](https://betterdiscord.net/home/) if you don't already have it.
 2. Download [evenBetterRepo.plugin.js](https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/evenBetterRepo.plugin.js)
