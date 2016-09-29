@@ -12,9 +12,19 @@ A better implementation of a repository for themes &amp; plugins for BetterDisco
 ## How To Use
 Go into your BetterDiscord plugins list, and click "Explore" under the "Even Better Repo" item.
 
+## To Add Your Theme/Plugin To The Repo
+Due to the underlying conflicts in Git's pull request streamline, managing too many will become extremely tedious.
+From this point, please submit "Issues" with the content that you want added using the following template:
+```
+Theme/Plugin Name:
+Theme/Plugin Author:
+Theme/Plugin Repo URL:
+Theme/Plugin Direct URL:
+Theme/Plugin Description: 
+```
+
 ## Contributors
 * [IRDeNial](https://github.com/IRDeNial/)
-* [0mniscient](https://github.com/0mniscient/)
 
 ## Contribution Guidelines
 * Document **ALL** code contributions
