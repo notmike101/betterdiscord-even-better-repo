@@ -179,6 +179,12 @@
             "author": "MorkHub",
             "description": "Enlarges emoji in messages to 64px (or custom size configurable in settings panel)",
             "url": "https://raw.githubusercontent.com/MorkHub/BetterDiscord-MorkMoji/master/morkMoji.plugin.js"
+        },
+        {
+            "name": "Kawaii Emotes",
+            "author": "noodlebox",
+            "description": "Better emote parsing for BetterDiscord. Fixes bugs with emotes and tooltips.",
+            "url": "https://raw.githubusercontent.com/noodlebox/betterdiscord-plugins/master/KawaiiEmotes.plugin.js"
         }
     ],
     "themes": [
