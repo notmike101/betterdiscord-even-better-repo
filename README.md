@@ -21,7 +21,6 @@ Due to the underlying conflicts in Git's pull request streamline, managing too m
 From this point, please submit "Issues" with the content that you want added using the following template:
 ```
 Title: Repo Update - Theme/Plugin - Name
-Labels: RepoRequest
 
 Theme/Plugin Name: `TYPE HERE`
 Theme/Plugin Author: `TYPE HERE`
