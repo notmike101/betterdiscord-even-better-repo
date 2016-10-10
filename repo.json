@@ -1,6 +1,12 @@
 {
     "plugins": [
         {
+            "name": "Kawaii Emotes",
+            "author": "noodlebox",
+            "description": "Better emote parsing for BetterDiscord. Fixes bugs with emotes and tooltips.",
+            "url": "https://raw.githubusercontent.com/noodlebox/betterdiscord-plugins/master/KawaiiEmotes.plugin.js"
+        },
+        {
             "name": "BetterDiscord Beta Test",
             "author": "Jiiks",
             "description": "Enables certain beta features before they're implemented to BetterDiscord",
