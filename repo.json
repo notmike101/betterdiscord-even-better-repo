@@ -1,6 +1,12 @@
 {
     "plugins": [
         {
+            "name": "Line Numbers",
+            "author": "noodlebox",
+            "description": "Add line numbers to code blocks.",
+            "url": "https://raw.githubusercontent.com/noodlebox/betterdiscord-plugins/master/LineNumbers.plugin.js"
+        },
+        {
             "name": "Kawaii Emotes",
             "author": "noodlebox",
             "description": "Better emote parsing for BetterDiscord. Fixes bugs with emotes and tooltips.",
