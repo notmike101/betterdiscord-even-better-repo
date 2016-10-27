@@ -195,6 +195,48 @@
     ],
     "themes": [
         {
+            "name": "ClearVision Amber",
+            "author": "Zerthox",
+            "description": "A fiery, orange theme with customizable colors & background",
+            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Amber.theme.css",
+            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber_dark.png"
+        },
+        {
+            "name": "ClearVision Amethyst",
+            "author": "Zerthox",
+            "description": "A mystical, purple theme with customizable colors & background",
+            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Amethyst.theme.css",
+            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst_dark.png"
+        },
+        {
+            "name": "ClearVision Emerald",
+            "author": "Zerthox",
+            "description": "A peaceful, green theme with customizable colors & background",
+            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Emerald.theme.css",
+            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald_dark.png"
+        },
+        {
+            "name": "ClearVision Ruby",
+            "author": "Zerthox",
+            "description": "A raging, red theme with customizable colors & background",
+            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Ruby.theme.css",
+            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby_dark.png"
+        },
+        {
+            "name": "ClearVision Sapphire",
+            "author": "Zerthox",
+            "description": "A chilly, blue theme with customizable colors & background",
+            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Sapphire.theme.css",
+            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire_dark.png"
+        },
+        {
+            "name": "ClearVision Halloween",
+            "author": "Zerthox",
+            "description": "A spooky, orange theme made for Halloween",
+            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/special/ClearVision_Halloween.theme.css",
+            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/halloween_dark.png"
+        },
+        {
             "name": "Material Icons Theme",
             "author": "Zerthox",
             "description": "A theme for Discord changing icons",
@@ -401,48 +443,6 @@
             "description": "",
             "url": "https://raw.githubusercontent.com/BeardDesign1/small-members-tab/themes/small-members-tab.theme.css",
             "preview": ""
-        }, 
-        {
-            "name": "ClearVision Amber",
-            "author": "Zerthox",
-            "description": "A fiery, orange theme with customizable colors & background",
-            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Amber.theme.css",
-            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amber1.png"
-        }, 
-        {
-            "name": "ClearVision Amethyst",
-            "author": "Zerthox",
-            "description": "A mystical, purple theme with customizable colors & background",
-            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Amethyst.theme.css",
-            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/amethyst1.png"
-        }, 
-        {
-            "name": "ClearVision Emerald",
-            "author": "Zerthox",
-            "description": "A peaceful, green theme with customizable colors & background",
-            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Emerald.theme.css",
-            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/emerald1.png"
-        }, 
-        {
-            "name": "ClearVision Remove Shadows",
-            "author": "Zerthox",
-            "description": "Removes shadows behind avatars & guilds in ClearVision themes",
-            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_RemoveShadows.theme.css",
-            "preview": ""
-        }, 
-        {
-            "name": "ClearVision Ruby",
-            "author": "Zerthox",
-            "description": "A raging, red theme with customizable colors & background",
-            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Ruby.theme.css",
-            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/ruby1.png"
-        }, 
-        {
-            "name": "ClearVision Sapphire",
-            "author": "Zerthox",
-            "description": "A chilly, blue theme with customizable colors & background",
-            "url": "https://raw.githubusercontent.com/Zerthox/ClearVision/master/themes/ClearVision_Sapphire.theme.css",
-            "preview": "https://cdn.rawgit.com/Zerthox/ClearVision/master/screenshots/sapphire1.png"
         }, 
         {
             "name": "Akame",
