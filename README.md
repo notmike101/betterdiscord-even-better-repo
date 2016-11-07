@@ -43,8 +43,7 @@ A list of all contributors can be found [here (https://github.com/IRDeNial/BD-Ev
 * Document **ALL** code contributions
   * Anything undocumented will be ignored until full documentation is provided
 * **TEST** your code first.  Do not blindly contribute.
-* Do NOT do a pull request into master, do it on **[dev](https://github.com/IRDeNial/BD-Even-Better-Repo/tree/dev)** instead.  This is for sake of simplicity.
-    * Your pull requests will be merged into master at each iteration if accepted.
+  * All code will be reviewed and tested before merging.
 
 ## Images
 ![https://share.md5.xyz/UB31470446748r8w.png](https://share.md5.xyz/UB31470446748r8w.png)
