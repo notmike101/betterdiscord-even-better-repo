@@ -36,8 +36,7 @@ Preview Screenshot: `TYPE HERE`
 Failure to follow this exact layout will result in your request being denied.  Nobody has time to fix your mistakes constantly.
 
 ## Contributors
-A list of all contributors can be found [here (https://github.com/IRDeNial/BD-Even-Better-Repo/network/members)](https://github.com/IRDeNial/BD-Even-Better-Repo/network/members)
-* [IRDeNial](https://github.com/IRDeNial/)
+A list of all contributors can be found [here (https://github.com/IRDeNial/BD-Even-Better-Repo/graphs/contributors)](https://github.com/IRDeNial/BD-Even-Better-Repo/graphs/contributors)
 
 ## Contribution Guidelines
 * Document **ALL** code contributions
