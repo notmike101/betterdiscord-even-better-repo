@@ -1,6 +1,12 @@
 {
     "plugins": [
         {
+            "name": "EvenBetterDiscord",
+            "author": "DeathStrikeV",
+            "description": "Loads FFZ emotes from alternate repository",
+            "url": "https://raw.githubusercontent.com/DeathStrikeV/EvenBetterDiscord/master/EvenBetterDiscord.plugin.js"
+        },
+        {
             "name": "Line Numbers",
             "author": "noodlebox",
             "description": "Add line numbers to code blocks.",
