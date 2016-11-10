@@ -145,10 +145,16 @@
             "url": "https://gist.githubusercontent.com/shtrih/8a72a36d513ec704c7a9/raw/EmbedAV.plugin.js"
         },
         {
+            "name": "CompactGuilds",
+            "author": "Kosshi",
+            "description": "Reduces sidebar's width or hides it completetly by displaying it only when cursor is near left edge.",
+            "url": "https://raw.githubusercontent.com/kosshishub/CompactGuilds-BD-plugin/master/CompactGuilds.plugin.js"
+        },
+        {
             "name": "Quicksave",
             "author": "Kosshi",
             "description": "Lets you save images fast with a short random name (Or the original if you want to)",
-            "url": "https://raw.githubusercontent.com/kosshishub/CompactGuilds-BD-plugin/master/CompactGuilds.plugin.js"
+            "url": "https://raw.githubusercontent.com/kosshishub/Quicksave-BD-plugin/master/Quicksave.plugin.js"
         }, 
         {
             "name": "Fave Emote Sorter",
