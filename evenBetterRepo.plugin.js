@@ -128,48 +128,48 @@ evenBetterRepo.prototype.load = function(){
     this.populateThemes = function(){
         var themes = this.repo.themes;
         for(var i = 0;i < this.repo.themes.length;++i) {
-            var themeInfo = '';
-            themeInfo += '<div class="ebr-theme-item">';
-                themeInfo += '<div class="ebr-theme-item-info">';
-                    themeInfo += '<p class="name">'+themes[i].name+'</p>';
-                    themeInfo += '<p class="author">'+themes[i].author+'</p>';
-                    themeInfo += '<div class="float-clear"></div>';
-                    themeInfo += '<p class="description">'+themes[i].description+'</p>';
-                    if(this.isThemeInstalled(themes[i].url)) {
-                        themeInfo += '<span style="display:none;">Installed</span>';
-                    }
-                themeInfo += '</div>';
+            let themeInfo = $("<div>", {"class": "ebr-theme-item"});
+            $("<div>", {"class": "ebr-theme-item-info"})
+                .append($("<p>", {"class": "name", text: themes[i].name}))
+                .append($("<p>", {"class": "author", text: themes[i].author}))
+                .append($("<div>", {"class": "float-clear"}))
+                .append($("<p>", {"class": "description", text: themes[i].description}))
+                .appendTo(themeInfo);
             if(this.isThemeInstalled(themes[i].url)) {
-                themeInfo += '<button class="update-button theme-update-button" updateURL="'+themes[i].url+'">Update</button>'
+                $("<button>", {"class": "update-button theme-update-button", updateURL: themes[i].url, text: "Update"})
+                    .appendTo(themeInfo);
             } else {
-                themeInfo += '<button target="_BLANK" installURL="'+themes[i].url+'" class="install-button theme-install-button">Install</button>';
+                $("<button>", {"class": "install-button theme-install-button", installURL: themes[i].url, text: "Install"})
+                    .appendTo(themeInfo);
             }
-            themeInfo += '<button  onclick="window.open(\''+themes[i].url+'\');return false;" class="view-source-button">View Source</button>';
-            themeInfo += '<div class="float-clear"></div>';
+            $("<button>", {"class": "view-source-button", installURL: themes[i].url, text: "View Source"})
+                .appendTo(themeInfo);
+            $("<div>", {"class": "float-clear"})
+                .appendTo(themeInfo);
             $('.settings .settings-right #ebr-themes-pane .control-group').append(themeInfo);
         }
     };
     this.populatePlugins = function(){
         var plugins = this.repo.plugins;
         for(var i = 0;i < this.repo.plugins.length;++i) {
-            var pluginInfo = '';
-            pluginInfo += '<div class="ebr-plugin-item">';
-            pluginInfo += '<div class="ebr-plugin-item-info">';
-                pluginInfo += '<p class="name">'+plugins[i].name+'</p>';
-                pluginInfo += '<p class="author">'+plugins[i].author+'</p>';
-                pluginInfo += '<div class="float-clear"></div>';
-                pluginInfo += '<p class="description">'+plugins[i].description+'</p>';
-                if(this.isPluginInstalled(plugins[i].url)) {
-                    pluginInfo += '<span style="display:none;">Installed</span>';
-                }
-            pluginInfo += '</div>';
+            let pluginInfo = $("<div>", {"class": "ebr-plugin-item"});
+            $("<div>", {"class": "ebr-plugin-item-info"})
+                .append($("<p>", {"class": "name", text: plugins[i].name}))
+                .append($("<p>", {"class": "author", text: plugins[i].author}))
+                .append($("<div>", {"class": "float-clear"}))
+                .append($("<p>", {"class": "description", text: plugins[i].description}))
+                .appendTo(pluginInfo);
             if(this.isPluginInstalled(plugins[i].url)) {
-                pluginInfo += '<button class="update-button plugin-update-button" updateURL="'+plugins[i].url+'">Update</button>'
+                $("<button>", {"class": "update-button plugin-update-button", updateURL: plugins[i].url, text: "Update"})
+                    .appendTo(pluginInfo);
             } else {
-                pluginInfo += '<button target="_BLANK" installURL="'+plugins[i].url+'" class="install-button plugin-install-button">Install</button>';
+                $("<button>", {"class": "install-button plugin-install-button", installURL: plugins[i].url, text: "Install"})
+                    .appendTo(pluginInfo);
             }
-            pluginInfo += '<button onclick="window.open(\''+plugins[i].url+'\');return false;" class="view-source-button">View Source</button>';
-            pluginInfo += '<div class="float-clear"></div>';
+            $("<button>", {"class": "view-source-button", installURL: plugins[i].url, text: "View Source"})
+                .appendTo(pluginInfo);
+            $("<div>", {"class": "float-clear"})
+                .appendTo(pluginInfo);
             $('.settings .settings-right #ebr-plugins-pane .control-group').append(pluginInfo);
         }
     };
@@ -243,6 +243,7 @@ evenBetterRepo.prototype.stop = function(){
     $('.plugin-update-button').off('click.ebr');
     $('.theme-install-button').off('click.ebr');
     $('.theme-update-button').off('click.ebr');
+    $('.view-source-button').off('click.ebr');
 };
 evenBetterRepo.prototype.getSettingsPanel = function () {
     return '<div class="ebr-tab-bar-container">'+ebr_changelog+'</div>';
@@ -335,6 +336,12 @@ evenBetterRepo.prototype.observer = function(e){
                 me.html('Updated');
                 me.addClass('disabled');
                 evenBetterRepo.installTheme(me.attr('updateURL'));
+                return false;
+            });
+            $('.view-source-button').on('click.ebr',function(e){
+                var me = $(e.target);
+                e.preventDefault();
+                window.open(me.attr('installURL'));
                 return false;
             });
             $('#theme-search').on('keyup.ebr',this.debounce(function(){
