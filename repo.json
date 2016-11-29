@@ -1,6 +1,18 @@
 {
     "plugins": [
         {
+            "name": "Toggle All",
+            "author": "Zerthox",
+            "description": "Enable/Disable all plugins or themes with a button",
+            "url": "https://raw.githubusercontent.com/Zerthox/BetterDiscord-Plugins/master/plugins/ToggleAll.plugin.js"
+        },
+        {
+            "name": "Theme Customizer",
+            "author": "Zerthox",
+            "description": "Customize CSS variables of themes",
+            "url": "https://raw.githubusercontent.com/Zerthox/BetterDiscord-Plugins/master/plugins/ThemeCustomizer.plugin.js"
+        },
+        {
             "name": "EvenBetterDiscord",
             "author": "DeathStrikeV",
             "description": "Loads FFZ emotes from alternate repository",
@@ -206,6 +218,12 @@
         }
     ],
     "themes": [
+        {
+            "name": "Full Dark",
+            "author": "fluffingtons",
+            "description": "A theme which aims to complete the dark theme for Discord.",
+            "url": "https://raw.githubusercontent.com/fluffingtons/fulldark/master/fulldark.theme.css"
+        },
         {
             "name": "Material Icons Theme",
             "author": "Zerthox",
