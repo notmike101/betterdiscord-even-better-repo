@@ -26,8 +26,8 @@ evenBetterRepo.prototype.load = function(){
         this.themePath = process.env.APPDATA + "\\BetterDiscord\\themes\\";
         this.pluginPath = process.env.APPDATA + "\\BetterDiscord\\plugins\\";
     } else if (process.platform == "linux"){
-        this.themePath= ".config/BetterDiscord/themes/";
-        this.pluginPath= ".config/BetterDiscord/plugins/";
+        this.themePath= process.env.HOME + "/.config/BetterDiscord/themes/";
+        this.pluginPath= process.env.HOME + "/.config/BetterDiscord/plugins/";
     } else if (process.platform == "darwin"){
         this.themePath = process.env.HOME + "/Library/Preferences/BetterDiscord/themes/";
         this.pluginPath = process.env.HOME + "/Library/Preferences/BetterDiscord/plugins/";
