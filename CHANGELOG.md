@@ -1,3 +1,7 @@
+v2.5.4 - 12/3/2016
+    * Fixed issue #62
+    * (Linux) Fixed plugin/theme path
+
 v2.5.3 - 9/29/2016
     * Fixed issue #45
 
