@@ -219,6 +219,12 @@
     ],
     "themes": [
         {
+            "name": "Kobato",
+            "author": "Syaoran3",
+            "description": "A Kobato theme made for EternalEnd",
+            "url": "https://raw.githubusercontent.com/DRedDogPE/DiscordThemes/master/Kobato/Kobato.theme.css"
+        },
+        {
             "name": "Full Dark",
             "author": "fluffingtons",
             "description": "A theme which aims to complete the dark theme for Discord.",
