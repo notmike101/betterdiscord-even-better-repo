@@ -1,6 +1,12 @@
 {
     "plugins": [
         {
+            "name": "Static Avatars",
+            "author": "noodlebox",
+            "description": "Don't animate avatars in the chat area.",
+            "url": "https://raw.githubusercontent.com/noodlebox/betterdiscord-plugins/master/StaticAvatars.plugin.js"
+        },
+        {
             "name": "Toggle All",
             "author": "Zerthox",
             "description": "Enable/Disable all plugins or themes with a button",
