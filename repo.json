@@ -225,6 +225,13 @@
     ],
     "themes": [
         {
+            "name": "Dark Cyan (Flat & Edgy)",
+            "author": "マギルゥーベルベット (magiruuvelvet)",
+            "description": "A dark cyan and flat & edgy theme for Discord",
+            "url": "https://raw.githubusercontent.com/magiruuvelvet/discord-theme-dark-cyan-flat-edgy/master/dark-cyan-flat-edgy.theme.css",
+            "preview": "https://raw.githubusercontent.com/magiruuvelvet/discord-theme-dark-cyan-flat-edgy/master/screenshots/main-ui.png"
+        },
+        {
             "name": "Kobato",
             "author": "Syaoran3",
             "description": "A Kobato theme made for EternalEnd",
