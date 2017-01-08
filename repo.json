@@ -1,6 +1,12 @@
 {
     "plugins": [
         {
+            "name": "High-Quality Avatars",
+            "author": "noodlebox",
+            "description": "Use crisp, high-resolution versions of avatars everywhere.",
+            "url": "https://raw.githubusercontent.com/noodlebox/betterdiscord-plugins/master/HDAvatars.plugin.js"
+        },
+        {
             "name": "Static Avatars",
             "author": "noodlebox",
             "description": "Don't animate avatars in the chat area.",
