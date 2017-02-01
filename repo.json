@@ -103,9 +103,9 @@
             "url": "https://raw.githubusercontent.com/IRDeNial/discord-channel-collapse-button/master/channelcollapsebutton.plugin.js"
         }, 
         {
-            "name": "Autoplay GIFS",
+            "name": "Autoplay GIF and GIFV",
             "author": "noodlebox",
-            "description": "Automatically play gifs without having to hover",
+            "description": "Automatically play GIF and GIFV embeds and Nitro avatars without having to hover.",
             "url": "https://raw.githubusercontent.com/noodlebox/betterdiscord-plugins/master/AutoPlayGifs.plugin.js"
         }, 
         {
