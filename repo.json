@@ -51,7 +51,7 @@
         {
             "name": "Transparency Patcher v2.1",
             "author": "HoLLy",
-            "description": "Patches your Discord client to allow transparent themes.To use, go to the plugin's settings, press the button, restart Discord COMPLETELY by closing it and re-opening it, then reload by pressing CTRL+R to enable transparency. If transparency is not working, just reload again. NOTE: Not giving support, don't mention me for this. If something doesn't work, check the instructions again.",
+            "description": "Patches your Discord client to allow transparent themes.\nTo use, go to the plugin's settings, press the button, restart Discord COMPLETELY by closing it and re-opening it, then reload by pressing CTRL+R to enable transparency. If transparency is not working, just reload again.\nNOTE: Not giving support, don't mention me for this. If something doesn't work, check the instructions again.",
             "url": "https://raw.githubusercontent.com/HoLLy-HaCKeR/BetterDiscord-Themes-and-Plugins/master/Plugins/transparency_patcher.plugin.js"
         },
         {
@@ -344,7 +344,7 @@
         {
             "name": "Transparency 1.0",
             "author": "HoLLy",
-            "description": "A theme that takes advantage of the transparency patch I made. It can also be used as base for a simple background theme. No support will be given for the transparency patch.",
+            "description": "A theme that takes advantage of the transparency patch I made. It can also be used as base for a simple background theme.\nNo support will be given for the transparency patch.",
             "url": "https://raw.githubusercontent.com/HoLLy-HaCKeR/BetterDiscord-Themes-and-Plugins/master/Themes/Transparency.theme.css",
             "preview": "https://camo.githubusercontent.com/0f0b6dea1101149b86e5fdb6a055cdefdfb1d479/68747470733a2f2f692e696d6775722e636f6d2f436d676f7030762e706e67"
         },
@@ -372,14 +372,7 @@
         {
             "name": "Spoiler CSS",
             "author": "Pu",
-            "description": "CSS for hiding content marked as spoiler, that will show only on hover. Usage: ***Spoiler*** Warning: Only people with this css won't see the spoiler, people without it will see normal text!",
-            "url": "https://raw.githubusercontent.com/Puv1s/Discord-Spoiler/master/Spoiler_Tag.theme.css",
-            "preview": ""
-        },
-        {
-            "name": "Spoiler CSS",
-            "author": "Pu",
-            "description": "CSS for hiding content marked as spoiler, that will show only on hover. Usage: ***Spoiler*** Warning: Only people with this css won't see the spoiler, people without it will see normal text!",
+            "description": "CSS for hiding content marked as spoiler, that will show only on hover.\nUsage: ***Spoiler***\nWarning: Only people with this css won't see the spoiler, people without it will see normal text!",
             "url": "https://raw.githubusercontent.com/Puv1s/Discord-Spoiler/master/Spoiler_Tag.theme.css",
             "preview": ""
         },
