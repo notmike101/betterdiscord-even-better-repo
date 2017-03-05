@@ -67,12 +67,6 @@
             "url": "https://raw.githubusercontent.com/kosshishub/BetterCustomCSS-BD-plugin/master/BetterCustomCSS.plugin.js"
         },
         {
-            "name": "Snow",
-            "author": "Jiiks",
-            "description": "Snow",
-            "url": "https://i.do.not.care/snoow.plugin.js"
-        },
-        {
             "name": "Quoter",
             "author": "samogot",
             "description": "Reply to people with a button, quoting full message or selected text",
