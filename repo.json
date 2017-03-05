@@ -1,6 +1,96 @@
 {
     "plugins": [
         {
+            "name": "ResizeX",
+            "author": "Anxeal",
+            "description": "Lets you resize videos and images",
+            "url": "https://raw.githubusercontent.com/Anxeal/BDEnhancements/master/plugins/ResizeX.plugin.js"
+        },
+        {
+            "name": "p.complete",
+            "author": "XFox Prower",
+            "description": "p.complete is a BetterDiscord plugin that gives you IRC-style auto-completion on nicknames.",
+            "url": "https://raw.githubusercontent.com/XFoxPrower/p.complete/master/p.complete.plugin.js"
+        },
+        {
+            "name": "Latex Plugin",
+            "author": "Mitchell",
+            "description": "A really crappy latex embedder. Converts code between $$ into latex. click to expand",
+            "url": "http://megamit.github.io/repository/tex/tex.plugin.js"
+        },
+        {
+            "name": "LazyLoad Patcher v1.0",
+            "author": "HoLLy",
+            "description": "For use with themes that change the size of elements that are lazily loaded.",
+            "url": "https://raw.githubusercontent.com/HoLLy-HaCKeR/BetterDiscord-Themes-and-Plugins/master/Plugins/lazyload_patcher.plugin.js"
+        },
+        {
+            "name": "Full Size Lightbox",
+            "author": "Jiiks",
+            "description": "Show full sized images in image preview",
+            "url": "https://gist.githubusercontent.com/Jiiks/7eb81b8950c073a09fbc2493da3ec714/raw/249f01f981a9a6a14bfbd170f28b8bf0e0a540d3/fullSizeLightbox.plugin.js"
+        },
+        {
+            "name": "Hashtag Plugin",
+            "author": "Arashiryuu",
+            "description": "Simply use the hash symbol '#' at the start of your word or sentence to get a distinct hashtag.",
+            "url": "https://raw.githubusercontent.com/Arashiryuu/crap/master/hashTagging.plugin.js"
+        },
+        {
+            "name": "orangeText Plugin",
+            "author": "Arashiryuu",
+            "description": "Use a less-than symbol '<' at the end of a sentence to make text orange.",
+            "url": "https://raw.githubusercontent.com/Arashiryuu/crap/master/orangeTexting.plugin.js"
+        },
+        {
+            "name": "greenText Plugin",
+            "author": "Arashiryuu",
+            "description": "Use a greater-than symbol '>' at the beginning of a sentence to make text green.",
+            "url": "https://raw.githubusercontent.com/Arashiryuu/crap/master/greenText.plugin.js"
+        },
+        {
+            "name": "Transparency Patcher v2.1",
+            "author": "HoLLy",
+            "description": "Patches your Discord client to allow transparent themes.To use, go to the plugin's settings, press the button, restart Discord COMPLETELY by closing it and re-opening it, then reload by pressing CTRL+R to enable transparency. If transparency is not working, just reload again. NOTE: Not giving support, don't mention me for this. If something doesn't work, check the instructions again.",
+            "url": "https://raw.githubusercontent.com/HoLLy-HaCKeR/BetterDiscord-Themes-and-Plugins/master/Plugins/transparency_patcher.plugin.js"
+        },
+        {
+            "name": "spoilerAlert",
+            "author": "LuaTenshi",
+            "description": "Allows you to hide your text as a spoiler by adding \"!!\" to the very start of your message.",
+            "url": "https://gist.githubusercontent.com/LuaTenshi/c43c220d1cadd7af4ab8734daf7a6706/raw/4b2c5a5acee5a5e570a83995772f2b4149ea1238/spoilerAlert.plugin.js"
+        },
+        {
+            "name": "BetterCustomCSS",
+            "author": "kosshi",
+            "description": "Lets you edit CSS live with your favorite text editor. Like Custom CSS but better.",
+            "url": "https://raw.githubusercontent.com/kosshishub/BetterCustomCSS-BD-plugin/master/BetterCustomCSS.plugin.js"
+        },
+        {
+            "name": "Snow",
+            "author": "Jiiks",
+            "description": "Snow",
+            "url": "https://i.do.not.care/snoow.plugin.js"
+        },
+        {
+            "name": "Quoter",
+            "author": "samogot",
+            "description": "Reply to people with a button, quoting full message or selected text",
+            "url": "https://gist.githubusercontent.com/samogot/774d3d2059402d5173a72524e39dd7d0/raw/c0f2cd7ebea51a8432d43bdbcd8f2ab94cda96f3/quouter.plugin.js"
+        },
+        {
+            "name": "ReturnScroll",
+            "author": "samogot",
+            "description": "Button for counting unread messages",
+            "url": "https://gist.githubusercontent.com/samogot/026e8894684cd76839c786910192aabd/raw/eb6848d53e8c203ef7ab3b7c624b6d0c5ff47374/return-scroll.plugin.js"
+        },
+        {
+            "name": "CountUnread",
+            "author": "samogot",
+            "description": "Button for returning to previous scroll position after posting a message",
+            "url": "https://gist.githubusercontent.com/samogot/355ba0ff414a6a9551baff500b1af60e/raw/4251658b52b9591ea6bbd38e1a5309ffd101e266/count-unread.plugin.js"
+        },
+        {
             "name": "High-Quality Avatars",
             "author": "noodlebox",
             "description": "Use crisp, high-resolution versions of avatars everywhere.",
@@ -230,6 +320,69 @@
         }
     ],
     "themes": [
+        {
+            "name": "Minimal Tweaks 1.0",
+            "author": "HoLLy",
+            "description": "A theme that makes minimal mode more minimal (and fixes some bugs). Requires the LazyLoad Patcher Plugin",
+            "url": "https://raw.githubusercontent.com/HoLLy-HaCKeR/BetterDiscord-Themes-and-Plugins/master/Themes/MinimalTweaks.theme.css",
+            "preview": "https://camo.githubusercontent.com/417f596227e26c28a8d30b0c650ba48650e0d5e1/687474703a2f2f692e696d6775722e636f6d2f436a6c674a46362e706e67"
+        },
+        {
+            "name": "Chat Text Bubbles",
+            "author": "maple",
+            "description": "Stylize your clients chat messages to look like mobile text messages with the Chat Text Bubbles! (Works on top of most themes too)",
+            "url": "https://raw.githubusercontent.com/mrmaple240/ChatTextBubbles/master/ChatTextBubbles.theme.css",
+            "preview": "https://camo.githubusercontent.com/1cef8e7c304e236bbbf2405826f42d401f473e34/687474703a2f2f692e696d6775722e636f6d2f504b47557a336a2e706e67"
+        },
+        {
+            "name": "JustBlack",
+            "author": "Dddsasul",
+            "description": "A very dark theme mostly black with a little very dark grays",
+            "url": "https://raw.githubusercontent.com/Dddsasul/TeamKappa-theme/master/JustBlack.theme.css",
+            "preview": "https://camo.githubusercontent.com/25f46a9c10b6ddea7774eb7f2263f6877b37b4cf/68747470733a2f2f692e6779617a6f2e636f6d2f63303732653737363833623766643366623836366366636631316534363263662e706e67"
+        },
+        {
+            "name": "Transparency 1.0",
+            "author": "HoLLy",
+            "description": "A theme that takes advantage of the transparency patch I made. It can also be used as base for a simple background theme. No support will be given for the transparency patch.",
+            "url": "https://raw.githubusercontent.com/HoLLy-HaCKeR/BetterDiscord-Themes-and-Plugins/master/Themes/Transparency.theme.css",
+            "preview": "https://camo.githubusercontent.com/0f0b6dea1101149b86e5fdb6a055cdefdfb1d479/68747470733a2f2f692e696d6775722e636f6d2f436d676f7030762e706e67"
+        },
+        {
+            "name": "Popouts Upgraded",
+            "author": "maple",
+            "description": "Adds a growing backdrop to popouts and stylized User Popouts.",
+            "url": "https://raw.githubusercontent.com/mrmaple240/Popouts-Upgraded/master/PopoutsUpgraded.theme.css",
+            "preview": "https://camo.githubusercontent.com/f1c8b29d6cc18b618a001084db75f8a404463c88/68747470733a2f2f6d792e6d6978746170652e6d6f652f726d706b6b622e676966"
+        },
+        {
+            "name": "UserPopouts Upgraded",
+            "author": "maple",
+            "description": "Stylized User Popouts.",
+            "url": "https://raw.githubusercontent.com/mrmaple240/UserPopoutUpgraded/master/UserPopoutsUpgraded.theme.css",
+            "preview": "https://camo.githubusercontent.com/3559de4408e194d62a18fb09bea34c13327c799a/68747470733a2f2f6d792e6d6978746170652e6d6f652f676265716b682e676966"
+        },
+        {
+            "name": "Full Dark theme",
+            "author": "fluffy",
+            "description": "A theme which aims to complete the dark theme for Discord! All elements that were previously white and bright are now in full dark goodness.",
+            "url": "https://raw.githubusercontent.com/fluffingtons/fulldark/master/fulldark.theme.css",
+            "preview": "https://raw.githubusercontent.com/fluffingtons/fulldark/resources/documents/screenshots/screenshot1.png"
+        },
+        {
+            "name": "Spoiler CSS",
+            "author": "Pu",
+            "description": "CSS for hiding content marked as spoiler, that will show only on hover. Usage: ***Spoiler*** Warning: Only people with this css won't see the spoiler, people without it will see normal text!",
+            "url": "https://raw.githubusercontent.com/Puv1s/Discord-Spoiler/master/Spoiler_Tag.theme.css",
+            "preview": ""
+        },
+        {
+            "name": "Spoiler CSS",
+            "author": "Pu",
+            "description": "CSS for hiding content marked as spoiler, that will show only on hover. Usage: ***Spoiler*** Warning: Only people with this css won't see the spoiler, people without it will see normal text!",
+            "url": "https://raw.githubusercontent.com/Puv1s/Discord-Spoiler/master/Spoiler_Tag.theme.css",
+            "preview": ""
+        },
         {
             "name": "Dark Cyan (Flat & Edgy)",
             "author": "マギルゥーベルベット (magiruuvelvet)",
