@@ -1,5 +1,17 @@
 {
     "plugins": [
+         {
+            "name": "Toggle All",
+            "author": "Zerthox",
+            "description": "Enable/disable all plugins or themes with a button",
+            "url": "https://raw.githubusercontent.com/Zerthox/BetterDiscord-Plugins/master/plugins/ToggleAll.plugin.js"
+        },
+         {
+            "name": "Theme Customizer",
+            "author": "Zerthox",
+            "description": "Customize CSS variables of themes",
+            "url": "https://raw.githubusercontent.com/Zerthox/BetterDiscord-Plugins/master/plugins/ThemeCustomizer.plugin.js"
+        },
         {
             "name": "ResizeX",
             "author": "Anxeal",
