@@ -12,7 +12,7 @@ evenBetterRepo.prototype.getVersion = function(){
     return '2.5.4';
 };
 evenBetterRepo.prototype.getAuthor = function(){
-    return '<a href="https://github.com/IRDeNial" target="_BLANK">DeNial</a>';
+    return '<a href="https://github.com/Decryptor" target="_BLANK">Popov</a>';
 };
 
 // OS Specific
@@ -33,10 +33,10 @@ evenBetterRepo.prototype.load = function(){
         this.pluginPath = process.env.HOME + "/Library/Preferences/BetterDiscord/plugins/";
     }
 
-    this.cssURL = 'https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/ebr.css';
-    this.repoURL = 'https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/repo.json';
-    this.pluginURL = 'https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/evenBetterRepo.plugin.js';
-    this.versionURL = 'https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/version';
+    this.cssURL = 'https://raw.githubusercontent.com/Dekryptor/BD-Plugins-Themes-Repo/master/ebr.css';
+    this.repoURL = 'https://raw.githubusercontent.com/Dekryptor/BD-Plugins-Themes-Repo/master/repo.json';
+    this.pluginURL = 'https://raw.githubusercontent.com/Dekryptor/BD-Plugins-Themes-Repo/master/evenBetterRepo.plugin.js';
+    this.versionURL = 'https://raw.githubusercontent.com/Dekryptor/BD-Plugins-Themes-Repo/master/version';
 
     this.ebrCSS = '';
     this.repo = '';
@@ -50,7 +50,7 @@ evenBetterRepo.prototype.load = function(){
     current_version = this.getVersion();
 
     this.getChangelog = function(){
-        require('request').get('https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/CHANGELOG.md',(error,response,body)=>{
+        require('request').get('https://raw.githubusercontent.com/Dekryptor/BD-Plugins-Themes-Repo/master/CHANGELOG.md',(error,response,body)=>{
             if(!error) {
                 ebr_changelog = body.replace(/(\r\n|\n\r|\r|\n)/g, '<br>');
             }
