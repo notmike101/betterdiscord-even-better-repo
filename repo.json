@@ -4,7 +4,7 @@
             "name": "ResizeX",
             "author": "Anxeal",
             "description": "Lets you resize videos and images",
-            "url": "https://raw.githubusercontent.com/Anxeal/BDEnhancements/master/plugins/ResizeX.plugin.js"
+            "url": "https://raw.githubusercontent.com/Anxeal/BDEnhancements/master/plugins/ResizeX/ResizeX.plugin.js"
         },
         {
             "name": "p.complete",
@@ -148,19 +148,19 @@
             "name": "Hide Images",
             "author": "Anxeal",
             "description": "Adds a button to the right-click menu to hide images on certain servers and channels",
-            "url": "https://raw.githubusercontent.com/Anxeal/BDEnhancements/master/plugins/HideImages.plugin.js"
+            "url": "https://raw.githubusercontent.com/Anxeal/BDEnhancements/master/plugins/HideImages/HideImages.plugin.js"
         },
         {
             "name": "Colored Typing",
             "author": "Anxeal, Bolli",
             "description": "Make the text color of the \"typing...\" text same as role color",
-            "url": "https://raw.githubusercontent.com/Anxeal/BDEnhancements/master/plugins/ColoredTyping.plugin.js"
+            "url": "https://raw.githubusercontent.com/Anxeal/BDEnhancements/master/plugins/ColoredTyping/ColoredTyping.plugin.js"
         },
         {
             "name": "Colored Voice",
             "author": "Anxeal",
             "description": "Make the text color of the names in the voice channel same as role color",
-            "url": "https://raw.githubusercontent.com/Anxeal/BDEnhancements/master/plugins/ColoredVoice.plugin.js"
+            "url": "https://raw.githubusercontent.com/Anxeal/BDEnhancements/master/plugins/ColoredVoice/ColoredVoice.plugin.js"
         },
         {
             "name": "Renamer",
