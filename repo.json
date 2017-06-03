@@ -742,6 +742,13 @@
             "description": "",
             "url": "https://raw.githubusercontent.com/TakosThings/battlefield/master/battlefield.theme.css",
             "preview": ""
+        },
+        {
+            "name": "ooer",
+            "author": "MorkHub",
+            "description": "oh hombre son agradables para ayrudar",
+            "url": "https://raw.githubusercontent.com/MorkHub/ooer-discord-theme/master/ooer.theme.css",
+            "preview": "https://i.imgur.com/imSck54.png"
         }
     ]
 }
