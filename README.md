@@ -1,6 +1,11 @@
 # Even Better Repo
 A better implementation of a repository for themes &amp; plugins for BetterDiscord
 
+# THIS PLUGIN IS CURRENTLY UNMAINTAINED.
+NO FUTURE WORK IS PLANNED, AND IT MAY BECONE INCOMPATIBLE WITH DISCORD AS NEW UPDATES COME OUT.
+This also means we will not be adding new themes & plugins.
+Feel free to fork and update if you wanr to.  Ee will watch pull requests and merge if they fix compatibility issues.
+
 ## How To Install
 1. Install [BetterDiscord](https://betterdiscord.net/home/) if you don't already have it.
 2. Download [evenBetterRepo.plugin.js](https://raw.githubusercontent.com/IRDeNial/BD-Even-Better-Repo/master/evenBetterRepo.plugin.js)
